@@ -1,13 +1,154 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* @import "react-toastify/dist/ReactToastify.css"; */
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25%;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* dashboard css */
+.container {
+  height: 100vh;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.container header .user-info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.container header .user-info a {
+  text-decoration: none;
+}
+
+.container header .user-info p:first-child {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container header .user-info p:first-child:hover {
+  background-color: rgb(255, 85, 0);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container header .user-info p:first-child span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container header .user-info p:last-child {
+  padding: 5px;
+}
+
+.container header .user-info p:last-child:hover {
+  background-color: rgb(255, 85, 0);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .companies {
+  margin-top: 20vh;
+}
+
+.container .companies {
+  margin-top: 20vh;
+}
+
+a.btn.btn-primary {
+  text-decoration: none;
+  background: rgb(255, 85, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+a.btn.btn-primary:hover {
+  color: white;
+}
+
+.company-detail {
+  margin-top: 20vh;
+}
+
+.company-image {
+  width: 200px;
+  height: 200px;
+}
+
+.company-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.action {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
