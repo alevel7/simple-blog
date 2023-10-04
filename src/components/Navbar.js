@@ -14,6 +14,9 @@ const Navbar = ({ user }) => {
                 <Link to="/addCompany">
                     <p><span>+</span> Add company</p>
                 </Link>
+                <Link to="/dashboard">
+                    <p>All company</p>
+                </Link>
                 <p>Welcome {user?.firstName || 'User'}</p>
                 <p onClick={() => logout()}>Logout</p>
             </div>

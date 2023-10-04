@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = 'http://127.0.0.1:3333'
+const BASE_URL = 'http://data-share-8a9408323960.herokuapp.com'
 // export const BASE_URL = 'https://data-share-8a9408323960.herokuapp.com'
 const api = axios.create({
     baseURL: BASE_URL

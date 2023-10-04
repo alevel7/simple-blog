@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import { getACompany } from '../apis/company.api';
 import { useState } from 'react';
@@ -47,7 +47,7 @@ const EditCompany = () => {
                     <p><span>Number of products:</span> <span>{data?.numberOfProducts}</span></p>
                     <p><span>Percentage:</span> <span>{data?.Percentage}</span></p>
                     <div className="company-image">
-                        {data?.logo && <img src={'http://localhost:3333/' + data?.logo} alt="company logo" />}
+                        {data?.logo && <img src={'http://data-share-8a9408323960.herokuapp.com/' + data?.logo} alt="company logo" />}
                     </div>
                     {currentUser?.isAdmin === true && <div className="action">
                         <input type="file" name="logo" id="logo" accept=".png,.jpg,.jpeg,.gif" onChange={handleImage} />
