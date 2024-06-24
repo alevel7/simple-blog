@@ -7,10 +7,15 @@ on:
         branches:
             - main
     workflow_dispatch:
+        inputs:
+            user_name:
+                description: 'What is your user name?'
+                type: string
+                required: true
 jobs:
     print-username:
         name: printing name
         runs-on: ubuntu-latest
         steps:
             - name: print name to standard output
-              run: echo The username is Taiwo
+              run: echo The username is ${{inputs.user_name}}
