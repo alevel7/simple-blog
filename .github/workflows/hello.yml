@@ -18,4 +18,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: print name to standard output
-              run: echo The username is ${{inputs.user_name}} -- ${{toJson(github)}}
+              run: echo The username is ${{inputs.user_name}}
+            - name: Inspect the github context
+              run: echo '${{github}}'
