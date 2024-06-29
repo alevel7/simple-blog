@@ -18,4 +18,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: print name to standard output
-              run: echo The username is ${{inputs.user_name}} -- ${{github.event.inputs.user_name}} - ${{github.workflow}}
+              run: echo The username is ${{inputs.user_name}} -- ${{toJson(github)}}
