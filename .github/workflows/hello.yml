@@ -19,3 +19,5 @@ jobs:
         steps:
             - name: print name to standard output
               run: echo The username is ${{inputs.user_name}}
+                   echo The username is ${{github.event.inputs.user_name}}
+                   echo The username is ${{github.workflow}}
